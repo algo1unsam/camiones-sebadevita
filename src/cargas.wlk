@@ -10,6 +10,9 @@ object knightRider {
 object bumblebee {
 
 	const property peso = 800
+	// TODO acá conderá usar objetos, uno que representa auto y otro robot
+	// de forma de poder delegar la peligrosidad, y que quede toda la información
+	// respectiva quede separada de este objeto
 	var property modo = "auto"
 
 	method peligrosidad() {
@@ -57,7 +60,7 @@ object contenedorPortuario {
 
 }
 
-object embalaje {  //TUVE EN CUENTA QUE EL EMBALAJE SOLO PUEDE CUBRIR UNA COSA.
+object embalaje {  //TUVE EN CUENTA QUE EL EMBALAJE SOLO PUEDE CUBRIR UNA COSA. // TODO es correcto
 
 	var property cobertura = paqueteDeLadrillos
 

@@ -1,6 +1,7 @@
 import cargas.*
 import rutas.*
 
+// TODO testear!!
 object camion {
 
 	var property cargas = []
@@ -77,6 +78,10 @@ object deposito {
 
 	method llenarTransporte(transporte) {
 		deposito.forEach({ carga =>
+			// TODO creo que primero habría que cargar, cosa que si tira la excepción
+			// no llega a sacar la carga (la idea es que la saque solo si puede)
+			// de esta manera primero lo saca, y DESPUES se ejecuta carga, que es el que tiene
+			// esa verificación
 			deposito.remove(carga)
 			transporte.cargar(carga)
 		})
